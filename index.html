@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+        integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Vendr</title>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <section class="row align-items-center g-2 bg-dark">
+            <div class="col-4 text-light fs-3 ps-2"><i class="mdi mdi-emoticon-cool"></i> Vendr</div>
+        </section>
+    </header>
+    <main>
+        <!-- SECTION VENDING MACHINE -->
+        <section class="row mt-5 justify-content-center">
+
+            <div class="col-4 bg-secondary rounded">
+                <h4>Vendr</h4>
+                <!-- <div id="app"></div> -->
+                <!-- SECTION TOP MACHINE -->
+                <section class="row bg-secondary rounded">
+                    <div class="col-1"></div>
+                    <div class="col-8 bg-dark">
+                        <!-- SECTION INNER MACHINE -->
+                        <section class="row justify-content-evenly align-items-center mt-2" id="machinefront">
+                            <!-- <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 1
+                            </div>
+                            <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 2
+                            </div>
+                            <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 3
+                            </div>
+                            <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 4
+                            </div>
+                            <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 5
+                            </div>
+                            <div class="col-5 text-light"><img src="https://thiscatdoesnotexist.com"
+                                    class="img-fluid snacksize rounded my-2"><br> 6
+                            </div> -->
+                        </section>
+                    </div>
+                    <!-- SECTION SIDE OF MACHINE -->
+                    <div class="col-2">
+
+
+                        <span>Logo</span>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="bg-primary text-light fs-6" id="snackName">doritos
+                        </div>
+                        <!-- SECTION NUMBPAD -->
+                        <section><span class="px-1 ps-2 jankbtn" onclick="
+                                app.snacksController.setActive(1)">1</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive(2)">2</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive(3)"">3</span>
+                            <br><span class=" px-1 ps-2 jankbtn" onclick="
+                                app.snacksController.setActive(4)">4</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive(5)">5</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive(6)">6</span><br>
+                            <span class="px-1 ps-2 jankbtn" onclick="
+                                app.snacksController.setActive()">7</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive()">8</span><span class="px-1 jankbtn" onclick="
+                                app.snacksController.setActive()">9</span><br>
+                        </section>
+                        <br>
+                        <!-- SECTION CASH THING -->
+                        <div class="bg-dark text-center py-1 rounded"><span id="snackPrice" class="bg-success rounded">
+                                4.00
+                            </span><br></div>
+
+
+                        <br>
+
+                        <div class="cashbox">
+
+                            <div id="insertcash" class="bg-gray cash2 ms-1">
+                                <div class="bg-dark cash3" onclick="app.snacksController.insertCash()"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray rounded slotc">
+                            <div class="bg-dark slot rounded"></div>
+                        </div>
+
+
+
+
+
+
+                        <br><br><br>
+                        <div class="bg-dark">hi</div>
+                    </div>
+                    <!-- SECTION MACHINE BOTTOM -->
+                    <div class="col-12">
+                        <section class="row bg-secondary justify-content-center text-center">
+                            <div class="col-11 machineends"> </div>
+                            <div class="col-5 border border-light border-3 fs-3 p-3">PUSH</div>
+                            <div class="col-12 machineends"></div>
+                            <div class="col-3 bg-secondary machinelegs">
+                            </div>
+                            <div class="col-9 bg-light">
+                            </div>
+                            <div class="col-3 bg-secondary machinelegs"></div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <div>
+            <div class="btn" onclick="app.snacksController.getChange()">Ask Strangers For Change</div>
+            <!-- <div class="btn" onclick=" app.snacksController.buySnack()">buy snack</div> -->
+            <span id="money"></span>
+            <span id="activesnack"></span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer class="bg-dark text-light">
+        <div class="text-center no-select">
+            <p><small></small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+        integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+    <script src="app/App.js" type="module"></script>
+</body>
+
+</html>

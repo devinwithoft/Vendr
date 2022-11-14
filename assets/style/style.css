@@ -1,0 +1,79 @@
+/* BASIC STYLES HERE */
+
+.machineends {
+    min-height: 30px;
+}
+
+.snacksize {
+    height: 100px;
+    width: 100px;
+}
+
+.machinelegs {
+    height: 50px;
+    width: 50px
+}
+
+.forcedflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-gray {
+    background-color: rgb(95, 95, 95);
+}
+
+/* .cash {
+    width: 45px;
+    height: 6px;
+} */
+
+.cash2 {
+    width: 50px;
+    height: 10px;
+}
+
+.cash3 {
+    width: 30px;
+    height: 4px;
+    margin-inline: 10px;
+}
+
+/* 
+.cash4 {
+    width: 30px;
+    height: 2px;
+    margin-inline: 5px;
+}
+
+.cash0 {
+
+    height: 22px;
+    width: 46px;
+
+} */
+
+.cashbox {
+    transform: translateY(-17px);
+}
+
+.slotc {
+    width: 15px;
+    height: 15px
+}
+
+.slot {
+    width: 2px;
+    height: 10px;
+    margin-inline-start: 6.5px;
+    margin-block-start: -4px;
+    padding-top: 12px;
+}
+
+.tizzop {
+    height: 40px
+}
+
+.jankbtn:hover {
+    cursor: pointer;
+}
